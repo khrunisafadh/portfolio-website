@@ -69,9 +69,9 @@ export default function AboutSection() {
                     </div>
                 <div className="md:pl-16">
                   <div className="bg-gradient-to-br from-blue-500/10 to-cyan-600/10 backdrop-blur-sm p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all hover:shadow-xl hover:shadow-cyan-500/20">
-                    <h5 className="font-bold text-blue-300 mb-2">Vice Head of Communication & Information Bureau</h5>
+                    <h5 className="font-bold text-blue-300 mb-2">Vice Head of Communication & Information Bureau (2025)</h5>
                     <p className="text-gray-400 text-sm mb-4">Supporting internal and external communication strategies, supervising publications, maintaining consistent branding, and collaborating across divisions for clear professional communication.</p>  
-                    <h5 className="font-bold text-blue-300 mb-2 mt-6">Communication Officer</h5>
+                    <h5 className="font-bold text-blue-300 mb-2 mt-6">Communication Officer (2024)</h5>
                     <p className="text-gray-400 text-sm">Managed content planning, publication schedules, and digital communication for faculty senate activities.</p>
                   </div>
                 </div>
@@ -90,9 +90,9 @@ export default function AboutSection() {
                 </div>
                 <div className="md:pl-16">
                   <div className="bg-gradient-to-br from-blue-500/10 to-cyan-600/10 backdrop-blur-sm p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all hover:shadow-xl hover:shadow-cyan-500/20">
-                    <h5 className="font-bold text-blue-300 mb-2">Head of Public Relations, Publication & Documentation Committee</h5>
+                    <h5 className="font-bold text-blue-300 mb-2">Head of Public Relations, Publication & Documentation (2025)</h5>
                     <p className="text-gray-400 text-sm mb-4">Supporting internal and external communication strategies, supervising publications and maintaining consistent branding across divisions, and coordinating with divisions for clear and professional communication.</p>
-                     <h5 className="font-bold text-blue-300 mb-2">Public Relations, Publication & Documentation Committee</h5>
+                     <h5 className="font-bold text-blue-300 mb-2">Public Relations, Publication & Documentation Committee (2023)</h5>
                     <p className="text-gray-400 text-sm mb-4">Handled event communication, content creation, and documentation for faculty election activities.</p>
                   </div>
                 </div>

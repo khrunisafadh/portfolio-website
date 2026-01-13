@@ -153,6 +153,6 @@ export const skills = {
 export const socialLinks = {
   email: "khoirunnisafadilah05@gmail.com",
   github: "https://github.com/khrunisafadh",
-  linkedin: "www.linkedin.com/in/khoirunnisa-fadilah-a349ba201",
+  linkedin: "https://www.linkedin.com/in/khoirunnisa-fadilah-a349ba201",
   instagram: "https://instagram.com/khrunisafadh"
 };

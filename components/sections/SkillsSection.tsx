@@ -81,8 +81,8 @@ export default function SkillsSection() {
           </div>
 
           <div className="md:col-span-2 bg-slate-900/40 backdrop-blur-sm rounded-2xl p-8 border border-slate-800 hover:border-purple-500/50 transition-all">
-            <h3 className="text-xl font-bold text-purple-400 mb-6 flex items-center gap-2">
-              <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
+            <h3 className="text-xl font-bold text-blue-400 mb-6 flex items-center gap-2">
+              <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
               Design & Creative Tools
             </h3>
             <div className="flex flex-wrap gap-3">

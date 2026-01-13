@@ -1,6 +1,7 @@
 'use client';
 
-import { Github, Linkedin, Mail, Instagram, ChevronDown, ArrowUpRight } from 'lucide-react';
+import { Github, Linkedin, Mail, Instagram, ChevronDown, ArrowUpRight, Download } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 import { socialLinks } from '@/lib/data';
 
 interface HeroSectionProps {
@@ -14,6 +15,13 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
     { icon: Mail, url: `mailto:${socialLinks.email}` },
     { icon: Instagram, url: socialLinks.instagram }
   ];
+
+  const cvLink = 'https://drive.google.com/file/d/YOUR_FILE_ID/view';
+
+  const handleDownloadCV = () => {
+    window.open(cvLink, '_blank', 'noopener,noreferrer');
+  };
+
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
@@ -44,22 +52,32 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
               </span>
             </h1>
             
-            <div className="text-2xl md:text-3xl font-semibold mb-6">
-              <span className="text-transparent bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text">
-                Backend Developer
-              </span>
-              <span className="text-gray-400"> & </span>
-              <span className="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text">
-                System Analyst
-              </span>
+            {/* Typewriter Effect */}
+            <div className="text-2xl md:text-3xl font-semibold mb-6 min-h-[2.5rem]">
+              <TypeAnimation
+                sequence={[
+                  'Information Systems Undergraduate',
+                  2500,
+                  'Tech Enthusiast',
+                  2500,
+                ]}
+                wrapper="span"
+                speed={30}
+                deletionSpeed={20}
+                repeat={Infinity}
+                cursor={true}
+                className="text-transparent bg-gradient-to-r from-blue-300 to-cyan-400 bg-clip-text"
+              />
             </div>
           </div>
           
           <p className="text-lg text-gray-300 mb-10 leading-relaxed max-w-xl">
-            Information Systems student specializing in backend development, system analysis, and full-stack solutions. Passionate about building efficient systems and exploring creative design.
+            Information Systems Undergraduate specializing in backend development, system analysis, and full-stack solutions. Passionate about building efficient systems and exploring creative design.
           </p>
           
+          {/* CTA buttons */}
           <div className="flex flex-wrap gap-4 mb-8">
+            {/* Primary CTA - Contact Me */}
             <button 
               onClick={() => onNavigate('contact')}
               className="group bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-4 rounded-xl font-medium transition-all shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 hover:scale-105 flex items-center gap-2"
@@ -67,7 +85,29 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
               Get in Touch
               <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
-            
+
+            {/* Secondary CTA - Download CV */}
+            <button 
+              onClick={handleDownloadCV}
+              className="group relative inline-flex items-center gap-2 px-8 py-4 
+                border-2 border-slate-700 hover:border-blue-400 
+                bg-slate-900/50 hover:bg-slate-800/80 backdrop-blur-sm
+                text-gray-300 hover:text-white 
+                rounded-xl font-medium 
+                transition-all duration-300
+                hover:shadow-lg hover:shadow-blue-500/20"
+            >
+              <Download 
+                size={20} 
+                className="group-hover:animate-bounce transition-transform" 
+              />
+              <span>Download CV</span>
+
+               {/* Hover glow effect */}
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            </button>
+
+            {/* Tertiary CTA - View Projects */}  
             <button 
               onClick={() => onNavigate('projects')}
               className="border-2 border-blue-500/50 hover:border-blue-400 bg-blue-500/10 hover:bg-blue-500/20 text-blue-300 hover:text-blue-200 px-8 py-4 rounded-xl font-medium transition-all backdrop-blur-sm"
@@ -75,6 +115,8 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
               View Projects
             </button>
           </div>
+
+      
           
           <div className="flex gap-4">
             {socialIcons.map((social, i) => (
@@ -92,7 +134,7 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
         </div>
 
         {/* Right: 3D Photo Frame */}
-        <div className="relative hidden md:block">
+        <div className="relative flex items-center justify-center">
           {/* Main Frame Container */}
           <div className="relative w-full max-w-md mx-auto">
             {/* 3D Frame */}
@@ -105,17 +147,13 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
               {/* Inner glow */}
               <div className="absolute inset-4 rounded-[2.5rem] bg-gradient-to-br from-blue-500/10 to-purple-500/10 blur-xl"></div>
               
-              {/* Photo placeholder */}
+              {/* Photo */}
               <div className="relative w-full h-full rounded-[2.5rem] bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden">
                 <img 
-                src="/images/profile-photo.jpeg" 
-                alt="Khoirunnisa Fadilah" 
-                className="w-full h-full object-cover"
-/>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                  </div>
-                </div>
+                  src="/images/profile-photo.jpeg" 
+                  alt="Khoirunnisa Fadilah" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Corner decorations */}

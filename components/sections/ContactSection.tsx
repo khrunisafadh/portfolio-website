@@ -53,14 +53,17 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="group bg-slate-900/40 backdrop-blur-sm hover:bg-gradient-to-br hover:from-cyan-500/20 hover:to-purple-500/20 p-8 rounded-2xl transition-all border border-slate-800 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/20"
           >
-            <Instagram size={36} className="mx-auto mb-4 text-purple-400 group-hover:scale-110 transition-transform" />
+            <Instagram size={36} className="mx-auto mb-4 text-cyan-400 group-hover:scale-110 transition-transform" />
             <div className="font-bold text-lg mb-2 text-white">Instagram</div>
             <div className="text-sm text-gray-400 group-hover:text-purple-300 transition-colors">Follow my journey</div>
           </a>
         </div>
         
         <div className="text-sm text-gray-500">
-          © 2025 Khoirunnisa Fadilah. Built with Next.js & Tailwind CSS.
+          © 2026 Khoirunnisa Fadilah. All rights reserved.
+        </div>
+        <div className="text-sm font-bold text-white-500">
+          Created by Khoirunnisa Fadilah
         </div>
       </div>
     </section>
