@@ -1,3 +1,5 @@
+import { prototype } from "events";
+
 export const technicalProjects = [
   {
     id: "cakra-news",
@@ -33,7 +35,7 @@ export const technicalProjects = [
       github: "https://github.com/khrunisafadh/mascoolin-inventory-c-project.git",
       demo: "https://www.youtube.com/watch?v=wXTPRb6TaxQ"
     },
-    image: "/images/projects/inventory.jpg"
+    image: "/images/projects/inventory.png"
   },
   {
     id: "system-analysis",
@@ -98,7 +100,9 @@ export const creativeProjects = [
     description: "Designed a mobile application for book discovery and community engagement. Conducted user research, created wireframes, and built interactive prototypes.",
     tools: ["Figma", "User Research", "Prototyping"],
     image: "/images/creative/readrite.png",
-    link: "#"
+    links: {
+      prototype: "https://www.figma.com/proto/eZwxH03tQRRH4j1xFUyUgJ/IMK-KEL-8?node-id=3-1935&starting-point-node-id=17%3A98&t=tFU7fYA2KjPSZYuP-1"
+    }
   },
   {
     id: "maxim",
@@ -107,7 +111,9 @@ export const creativeProjects = [
     description: "Led UI/UX redesign for ride-sharing platform services. Managed complete project documentation including WBS, risk analysis, and stakeholder management.",
     tools: ["Figma", "Project Management", "Draw.io"],
     image: "/images/creative/maxim.png",
-    link: "https://www.figma.com/proto/eZwxH03tQRRH4j1xFUyUgJ/IMK-KEL-8?node-id=3-1935&starting-point-node-id=17%3A98&t=tFU7fYA2KjPSZYuP-1"
+    links: {
+      figma: "https://www.figma.com/proto/eZwxH03tQRRH4j1xFUyUgJ/IMK-KEL-8?node-id=3-1935&starting-point-node-id=17%3A98&t=tFU7fYA2KjPSZYuP-1"
+    }
   },
   {
     id: "smf-design",
@@ -115,18 +121,25 @@ export const creativeProjects = [
     type: "Visual Design",
     description: "Created consistent Instagram content and visual campaigns for university student senate. Maintained brand guidelines and design system across publications.",
     tools: ["Canva", "Adobe Illustrator", "Brand Design"],
-    image: "/images/creative/smf.png",
-    link: "#"
+    image: "/images/creative/smfik.png",
+    links: {
+      instagram: "https://www.instagram.com/senatfikupnvj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    }
   },
   {
     id: "video-editing",
     title: "Event Video Production",
     type: "Video Editing",
-    description: "Produced promotional and recap videos for campus events. Handled full editing workflow from footage selection to final export.",
+    description: "Produced promotional and recap videos for campus & highschool events. Handled full editing workflow from footage selection to final export.",
     tools: ["Video Editing", "Content Production"],
     image: "/images/creative/video.png",
-    link: "#"
+    links: {
+      "Company profile": "https://youtu.be/84vvhscqY3E?si=fpZwnBTqXhCUeVS9",
+      "Event recap": "https://youtu.be/Q_MgG3yM22Y?si=gdk-Y2V4lGs2cox9",
+      "PJBL Video": "https://youtu.be/7X-RUuVqIGw?si=7tTb3m8Fk6KkxTS6"
+    }
   }
+  
 ];
 
 export const skills = {
