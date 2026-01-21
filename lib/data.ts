@@ -1,5 +1,3 @@
-import { prototype } from "events";
-
 export const technicalProjects = [
   {
     id: "cakra-news",
@@ -35,7 +33,7 @@ export const technicalProjects = [
       github: "https://github.com/khrunisafadh/mascoolin-inventory-c-project.git",
       demo: "https://www.youtube.com/watch?v=wXTPRb6TaxQ"
     },
-    image: "/images/projects/inventory.png"
+    image: "/images/projects/inventory.jpg"
   },
   {
     id: "system-analysis",
@@ -100,9 +98,7 @@ export const creativeProjects = [
     description: "Designed a mobile application for book discovery and community engagement. Conducted user research, created wireframes, and built interactive prototypes.",
     tools: ["Figma", "User Research", "Prototyping"],
     image: "/images/creative/readrite.png",
-    links: {
-      prototype: "https://www.figma.com/proto/eZwxH03tQRRH4j1xFUyUgJ/IMK-KEL-8?node-id=3-1935&starting-point-node-id=17%3A98&t=tFU7fYA2KjPSZYuP-1"
-    }
+    link: "#"
   },
   {
     id: "maxim",
@@ -111,9 +107,7 @@ export const creativeProjects = [
     description: "Led UI/UX redesign for ride-sharing platform services. Managed complete project documentation including WBS, risk analysis, and stakeholder management.",
     tools: ["Figma", "Project Management", "Draw.io"],
     image: "/images/creative/maxim.png",
-    links: {
-      figma: "https://www.figma.com/proto/eZwxH03tQRRH4j1xFUyUgJ/IMK-KEL-8?node-id=3-1935&starting-point-node-id=17%3A98&t=tFU7fYA2KjPSZYuP-1"
-    }
+    link: "https://www.figma.com/proto/eZwxH03tQRRH4j1xFUyUgJ/IMK-KEL-8?node-id=3-1935&starting-point-node-id=17%3A98&t=tFU7fYA2KjPSZYuP-1"
   },
   {
     id: "smf-design",
@@ -121,25 +115,18 @@ export const creativeProjects = [
     type: "Visual Design",
     description: "Created consistent Instagram content and visual campaigns for university student senate. Maintained brand guidelines and design system across publications.",
     tools: ["Canva", "Adobe Illustrator", "Brand Design"],
-    image: "/images/creative/smfik.png",
-    links: {
-      instagram: "https://www.instagram.com/senatfikupnvj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    }
+    image: "/images/creative/smf.png",
+    link: "#"
   },
   {
     id: "video-editing",
     title: "Event Video Production",
     type: "Video Editing",
-    description: "Produced promotional and recap videos for campus & highschool events. Handled full editing workflow from footage selection to final export.",
+    description: "Produced promotional and recap videos for campus events. Handled full editing workflow from footage selection to final export.",
     tools: ["Video Editing", "Content Production"],
     image: "/images/creative/video.png",
-    links: {
-      "Company profile": "https://youtu.be/84vvhscqY3E?si=fpZwnBTqXhCUeVS9",
-      "Event recap": "https://youtu.be/Q_MgG3yM22Y?si=gdk-Y2V4lGs2cox9",
-      "PJBL Video": "https://youtu.be/7X-RUuVqIGw?si=7tTb3m8Fk6KkxTS6"
-    }
+    link: "#"
   }
-  
 ];
 
 export const skills = {
@@ -169,3 +156,74 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/khoirunnisa-fadilah-a349ba201",
   instagram: "https://instagram.com/khrunisafadh"
 };
+
+export const certificates = [
+  // Technical Certificates
+   {
+    id: "cert-tech-1",
+    title: "Data Analytics Specialist",
+    issuer: "Certiport",
+    date: "December 2024",
+    description: "Completed comprehensive data analytics certification covering data interpretation, digital communication, critical thinking, and collaborative problem-solving.",
+    skills: ["Data Analytics", "Data Interpretation", "Critical Thinking", "Problem Solving"],
+    image: "/images/certificates/data-analytics-certif.jpg",
+    credentialUrl: "https://drive.google.com/file/d/1sVh6BvZaPXluFnYMIj_-ZwdaVOCpCjFC/view?usp=sharing",
+    category: "technical" as const
+  },
+  {
+    id: "cert-tech-2",
+    title: "21st Century Employability Skills Program - Advanced",
+    issuer: "Wadhwani Foundation",
+    date: "April 2024",
+    description: "Completed advanced employability skills training focusing on communication, collaboration, and digital literacy.",
+    skills: ["Communication", "Collaboration", "Digital Literacy"],
+    image: "/images/certificates/employability-certif.jpg",
+    credentialUrl: "https://drive.google.com/file/d/1g4G5lmxXBh50qe4TDb9uN7Q_U-8-4972/view?usp=sharing",
+    category: "technical" as const
+  },
+  {
+    id: "cert-tech-3",
+    title: "Short Class - Website Development: Back End",
+    issuer: "MySkill",
+    date: "October 2025",
+    description: "Completed back-end web development course covering server-side programming, database management, and API integration.",
+    skills: ["JavaScript", "Database Management", "API Integration"],
+    image: "/images/certificates/website-dev-certif.jpg",
+    credentialUrl: "https://drive.google.com/file/d/1v89nihirJeU9wY_EwBHocOx_xUDrbvi8/view?usp=sharing",
+    category: "technical" as const
+  },
+  // Organizational Certificates
+  {
+    id: "cert-organizational-1",
+    title: "Expert Staff of the Communications and Information Bureau",
+    issuer: "SMF-IK 2024/2025",
+    date: "January 2025",
+    description: "Recognized for expertise in communication and information management within the Faculty Student Senate.",
+    skills: ["Communication", "Information Management", "Teamwork"],
+    image: "/images/certificates/tenaga-ahli-certif.jpg",
+    credentialUrl: "https://drive.google.com/file/d/1ByBfVQUlD4Na2QYl8Z8lHxr2K5mgG6vx/view?usp=sharing",
+    category: "organizational" as const
+  },
+  {
+    id: "cert-organizational-2",
+    title: "Staff of Marketing & Public Relations",
+    issuer: "Veteran Premier Cup 2023",
+    date: "November 2023",
+    description: "Contributed to marketing and public relations efforts for a major university sports event.",
+    skills: ["Marketing", "Public Relations", "Event Promotion"],
+    image: "/images/certificates/vpc-marketing-certif.jpg",
+    credentialUrl: "https://drive.google.com/file/d/1RSae375-8uMu0sYCw34Y1pv_3ckGuCDQ/view?usp=sharing",
+    category: "organizational" as const
+  },
+  {
+    id: "cert-organizational-3",
+    title: "Staff of Public Relations, Publication, and Documentation Division",
+    issuer: "PEMIRA FIK UPNVJ 2023",
+    date: "November 2023",
+    description: "Contributed to public relations, publication, and documentation efforts for the Faculty Student Parliament.",
+    skills: ["Public Relations", "Documentation", "Event Management"],
+    image: "/images/certificates/pemira-certif.jpg",
+    credentialUrl: "https://drive.google.com/file/d/13aCvkXnVMpfujh1egWtWeb0sTw5rnIet/view?usp=sharing",
+    category: "organizational" as const
+  }
+]
