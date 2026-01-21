@@ -29,8 +29,8 @@ export default function AboutSection() {
             </h3>
             <div className="space-y-2">
               <div className="font-semibold text-white">UPN "Veteran" Jakarta</div>
-              <div className="text-gray-400">B.S. Information Systems</div>
-              <div className="text-blue-300 font-medium">GPA: 3.89/4.00 | 2023 - Present</div>
+              <div className="text-gray-400">Information Systems Undergraduate</div>
+              <div className="text-blue-300 font-medium">2023 - Present</div>
             </div>
           </div>
 
