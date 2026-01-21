@@ -179,18 +179,21 @@ export default function CreativeSection() {
                 </div>
               </div>
 
-              {/* Action Button */}
-              {selectedProject.link && (
-                <div className="flex gap-4">
-                  <a
-                    href={selectedProject.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl font-medium transition-all shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50"
-                  >
-                    <ExternalLink size={18} />
-                    <span>View Project</span>
-                  </a>
+              {/* Action Buttons - Multiple Links */}
+              {selectedProject.links && Object.keys(selectedProject.links).length > 0 && (
+                <div className="flex flex-wrap gap-4">
+                  {Object.entries(selectedProject.links).map(([key, url]: [string, any]) => (
+                    <a
+                      key={key}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl font-medium transition-all shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50"
+                    >
+                      <ExternalLink size={18} />
+                      <span className="capitalize">{key}</span>
+                    </a>
+                  ))}
                 </div>
               )}
             </div>
