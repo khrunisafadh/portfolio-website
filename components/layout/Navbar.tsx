@@ -26,6 +26,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
     { name: 'Projects', id: 'projects' },
     { name: 'Creative', id: 'creative' },
     { name: 'Skills', id: 'skills' },
+    { name: 'Certificates', id: 'certificates' },
     { name: 'Contact', id: 'contact' }
   ];
 
