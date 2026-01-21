@@ -8,6 +8,7 @@ import ProjectsSection from '@/components/sections/ProjectsSection';
 import CreativeSection from '@/components/sections/CreativeSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import ContactSection from '@/components/sections/ContactSection';
+import CertificateSection from '@/components/sections/CertificateSection';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
@@ -21,14 +22,18 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 overflow-x-hidden">
       <Navbar activeSection={activeSection} onNavigate={scrollToSection} />
+
+      <main className="w-full max-w-[100vw] overflow-x-hidden">
       <HeroSection onNavigate={scrollToSection} />
       <AboutSection />
       <ProjectsSection />
       <CreativeSection />
       <SkillsSection />
+      <CertificateSection />
       <ContactSection />
+    </main>
     </div>
   );
 }
