@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Khoirunnisa Fadilah | Backend Developer & System Analyst",
+  title: "Khoirunnisa Fadilah | Portfolio Website",
   description: "Information Systems student specializing in backend development, system analysis, and full-stack solutions.",
   keywords: ["Backend Developer", "System Analyst", "Full Stack", "Laravel", "PHP", "Portfolio"],
   authors: [{ name: "Khoirunnisa Fadilah" }],
