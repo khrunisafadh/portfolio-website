@@ -23,7 +23,7 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 pt-24 pb-12 relative overflow-hidden">S
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 pt-24 pb-12 relative overflow-hidden">
       
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
