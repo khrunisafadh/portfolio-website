@@ -33,7 +33,7 @@ export const technicalProjects = [
       github: "https://github.com/khrunisafadh/mascoolin-inventory-c-project.git",
       demo: "https://www.youtube.com/watch?v=wXTPRb6TaxQ"
     },
-    image: "/images/projects/inventory.jpg"
+    image: "/images/projects/inventory.png"
   },
   {
     id: "system-analysis",
@@ -115,7 +115,7 @@ export const creativeProjects = [
     type: "Visual Design",
     description: "Created consistent Instagram content and visual campaigns for university student senate. Maintained brand guidelines and design system across publications.",
     tools: ["Canva", "Adobe Illustrator", "Brand Design"],
-    image: "/images/creative/smf.png",
+    image: "/images/creative/smfik.png",
     link: "#"
   },
   {
